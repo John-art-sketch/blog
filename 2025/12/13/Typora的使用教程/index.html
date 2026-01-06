@@ -1,0 +1,582 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Typora的使用教程 | 名不显时心不朽，再挑灯火看文章</title><meta name="author" content="刘谌"><meta name="copyright" content="刘谌"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="[TOC] 前情提要 pdf文件形式可以直接点击链接跳转，但是在Typora内要用Ctrl+鼠标左键才能跳转  1、此笔记是按照此视频编写   【【Typora 教程】手把手教你如何用Typora撰写笔记】https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1h84y1Y7nn?vd_source&#x3D;1ca1ee3dc1972e26559c0c72abc0c86c  (使用Ctrl+左">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora的使用教程">
+<meta property="og:url" content="http://example.com/2025/12/13/Typora%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="名不显时心不朽，再挑灯火看文章">
+<meta property="og:description" content="[TOC] 前情提要 pdf文件形式可以直接点击链接跳转，但是在Typora内要用Ctrl+鼠标左键才能跳转  1、此笔记是按照此视频编写   【【Typora 教程】手把手教你如何用Typora撰写笔记】https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1h84y1Y7nn?vd_source&#x3D;1ca1ee3dc1972e26559c0c72abc0c86c  (使用Ctrl+左">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/touxiang.jpg">
+<meta property="article:published_time" content="2025-12-13T05:47:35.000Z">
+<meta property="article:modified_time" content="2025-12-13T09:52:44.563Z">
+<meta property="article:author" content="刘谌">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/touxiang.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Typora的使用教程",
+  "url": "http://example.com/2025/12/13/Typora%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/",
+  "image": "http://example.com/img/touxiang.jpg",
+  "datePublished": "2025-12-13T05:47:35.000Z",
+  "dateModified": "2025-12-13T09:52:44.563Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "刘谌",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2025/12/13/Typora%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Typora的使用教程',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">名不显时心不朽，再挑灯火看文章</span></a><a class="nav-page-title" href="/"><span class="site-name">Typora的使用教程</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">Typora的使用教程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-12-13T05:47:35.000Z" title="Created 2025-12-13 13:47:35">2025-12-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-12-13T09:52:44.563Z" title="Updated 2025-12-13 17:52:44">2025-12-13</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>[TOC]</p>
+<h1 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h1><blockquote>
+<p>pdf文件形式可以直接点击链接跳转，但是在Typora内要用Ctrl+鼠标左键才能跳转</p>
+</blockquote>
+<p>1、此笔记是按照此视频编写</p>
+<blockquote>
+<p> 【【Typora 教程】手把手教你如何用Typora撰写笔记】<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1h84y1Y7nn?vd_source=1ca1ee3dc1972e26559c0c72abc0c86c">https://www.bilibili.com/video/BV1h84y1Y7nn?vd_source=1ca1ee3dc1972e26559c0c72abc0c86c</a></p>
+</blockquote>
+<p>(使用Ctrl+左键可直接跳转至浏览器b站官网进行观看)</p>
+<p>2、这个是安装包，百度or夸克任选其一即可（拼多多买的破解版）</p>
+<blockquote>
+<p> 夸克网盘链接：<a target="_blank" rel="noopener" href="https://pan.quark.cn/s/bd77dd55d33d">https://pan.quark.cn/s/bd77dd55d33d</a><br> 百度网盘链接:<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/11np2SX3kejQxO1sdA9K43Q">https://pan.baidu.com/s/11np2SX3kejQxO1sdA9K43Q</a>?<br> 提取码:4zu9</p>
+</blockquote>
+<p>3、写博客时记得在大纲最前方输入[TOC]</p>
+<h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><blockquote>
+<p>快捷键：Ctrl+数字或者选中后按加减</p>
+</blockquote>
+<blockquote>
+<p>正常使用：用#+space+标题即可</p>
+</blockquote>
+<h1 id="二、段落"><a href="#二、段落" class="headerlink" title="二、段落"></a>二、段落</h1><h4 id="1、换行"><a href="#1、换行" class="headerlink" title="1、换行"></a>1、换行</h4><p>shift + enter  小换行<br>enter 大换行</p>
+<p>etc</p>
+<h4 id="2、分割线"><a href="#2、分割线" class="headerlink" title="2、分割线"></a>2、分割线</h4><hr>
+<p>三个减号（或星号）加上回车</p>
+<h1 id="三、文字显示"><a href="#三、文字显示" class="headerlink" title="三、文字显示"></a>三、文字显示</h1><h4 id="1、字体"><a href="#1、字体" class="headerlink" title="1、字体"></a>1、字体</h4><p><strong>注意：偏好设置里的一些设置需要重启文件才能使用</strong></p>
+<p>粗体：用一对双星号包裹</p>
+<p>删除线：用一对双飘号包裹</p>
+<p>下划线：用一对u标签包裹</p>
+<p>斜体：用一对单星号包裹</p>
+<p>高亮：用一对双等号包裹</p>
+<h5 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h5><p><strong>这是粗体</strong></p>
+<p><del>这是删除线</del></p>
+<p><u>这是下划线</u></p>
+<p><em>这是斜体</em></p>
+<p><mark>这是高亮</mark></p>
+<p>&#x3D;&#x3D;这也是高亮&#x3D;&#x3D;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">**这是粗体**</span><br><span class="line">~~这是删除线~~</span><br><span class="line">&lt;u&gt;这是下划线&lt;/u&gt;</span><br><span class="line">*这是斜体*</span><br><span class="line">==这是高亮==</span><br><span class="line">也可以用mark标签进行高亮：</span><br><span class="line">&lt;mark&gt;这也是高亮&lt;/mark&gt;</span><br></pre></td></tr></table></figure>
+
+<h5 id="快捷键相关从上方工具栏的格式-o-中了解"><a href="#快捷键相关从上方工具栏的格式-o-中了解" class="headerlink" title="快捷键相关从上方工具栏的格式(o)中了解"></a>快捷键相关从上方工具栏的格式(o)中了解</h5><h5 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h5><p><strong>黑体</strong>     <em>斜体</em>    <u>下划线</u>   <mark>高亮 </mark>   (高亮无快捷键)</p>
+<p><mark><u>黑体加下划线，并高亮显示</u></mark></p>
+<p>拓展题：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1，试着解决1*2*3···*99中星号消失的问题？</span><br><span class="line">2，试着解决\*中\消失的问题？</span><br></pre></td></tr></table></figure>
+
+<p>1,    1*2*3…(用\*)<br>2,     用\*(三斜杠加一个星号即可)</p>
+<h4 id="2、上下标"><a href="#2、上下标" class="headerlink" title="2、上下标"></a>2、上下标</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1、x^2^</span><br><span class="line">2、H~2~O</span><br></pre></td></tr></table></figure>
+
+<p>效果：x^2^<br>H<del>2</del>O</p>
+<p>练习：x<del>1</del>^2^</p>
+<h1 id="四、列表"><a href="#四、列表" class="headerlink" title="四、列表"></a>四、列表</h1><h4 id="1、无序列表"><a href="#1、无序列表" class="headerlink" title="1、无序列表"></a>1、无序列表</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*/-/+ +space</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p>1.只有同一级别：</p>
+<ul>
+<li>略过</li>
+</ul>
+<p>2.子集类：</p>
+<ul>
+<li>一级分类<ul>
+<li>二级分类<ul>
+<li>三级分类（回车时tab或者写好后选中按CTRL+左右中括号键）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>按CTRL+[  可返回正文状态</p>
+<ul>
+<li>也可以用ctrl+shift+]打出这个符号</li>
+</ul>
+<h4 id="2、有序列表"><a href="#2、有序列表" class="headerlink" title="2、有序列表"></a>2、有序列表</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">数字+.+space</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<ol>
+<li><p>asdflk</p>
+</li>
+<li><p>aldkfs</p>
+<ul>
+<li><p>内容</p>
+<p>  图片</p>
+</li>
+<li><p>注意事项</p>
+</li>
+</ul>
+</li>
+<li><p>3333</p>
+<ol>
+<li>22</li>
+<li>33</li>
+</ol>
+</li>
+</ol>
+<h4 id="3、任务列表"><a href="#3、任务列表" class="headerlink" title="3、任务列表"></a>3、任务列表</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- [ ]吃早餐</span><br><span class="line">- [x]背单词</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<ul>
+<li><p><input disabled="" type="checkbox"> 
+吃早餐</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+背单词</p>
+</li>
+</ul>
+<h1 id="五、区块显示"><a href="#五、区块显示" class="headerlink" title="五、区块显示"></a>五、区块显示</h1><blockquote>
+<p> 代码：</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">》+space</span><br></pre></td></tr></table></figure></blockquote>
+<blockquote>
+<p>效果：</p>
+<blockquote>
+<p>这是最外层区块</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>这是内层区块</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>这是最内层区块</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p> 分层时双击回车键即可</p>
+</blockquote>
+<h1 id="六、代码显示"><a href="#六、代码显示" class="headerlink" title="六、代码显示"></a>六、代码显示</h1><h4 id="1、行内代码"><a href="#1、行内代码" class="headerlink" title="1、行内代码"></a>1、行内代码</h4><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`int a=0;`(说明：`是位于Esc下方那个键的英文输入版本)</span><br></pre></td></tr></table></figure></blockquote>
+<blockquote>
+<p> 效果：</p>
+<p> <code>int a=0;</code></p>
+</blockquote>
+<blockquote>
+<p>快捷键：CTRL+shift+&#96;</p>
+</blockquote>
+<p>行内代码主要用于美化一堆内容当中的代码内容部分</p>
+<h4 id="2、代码块"><a href="#2、代码块" class="headerlink" title="2、代码块"></a>2、代码块</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello World&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```+所使用的语言+回车</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```js/java/c#/text</span><br><span class="line">内容</span><br><span class="line">````</span><br></pre></td></tr></table></figure></blockquote>
+<blockquote>
+<p>快捷键：CTRL+ shift+K</p>
+</blockquote>
+<h1 id="七、链接"><a href="#七、链接" class="headerlink" title="七、链接"></a>七、链接</h1><p><a href="#%E4%B8%80%E3%80%81%E6%A0%87%E9%A2%98">标题1</a></p>
+<blockquote>
+<p> 注意：跳转本文本标题的时候注意把#加上去，不要夹空格在里面</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://liuchen.zeabur.app/">刘谌的网站</a></p>
+<blockquote>
+<p>&#x3D;&#x3D;注意：按CTRL+鼠标右键才能跳转&#x3D;&#x3D;</p>
+</blockquote>
+<h1 id="八、脚注"><a href="#八、脚注" class="headerlink" title="八、脚注"></a>八、脚注</h1><blockquote>
+<p>说明：对文本进行解释说明。</p>
+</blockquote>
+<blockquote>
+<p>代码：</p>
+<p>文字<a href="%E8%BF%99%E6%98%AF%E8%AF%B4%E6%98%8E">^1</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[^文本]</span><br><span class="line">[^文本]：解释说明</span><br></pre></td></tr></table></figure></blockquote>
+<blockquote>
+<p>效果：</p>
+<p>这是一个技术</p>
+</blockquote>
+<p>练习：如何实现多行注释？</p>
+<blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">中间插入关键字&lt;br&gt;即可显示为回车</span><br></pre></td></tr></table></figure></blockquote>
+<p>右边是对我<a href="%E8%BF%99%E6%98%AF%E4%B8%80%E6%AE%B5%E5%A4%9A%E8%A1%8C%E6%B3%A8%E8%A7%A3%EF%BC%8C%3Cbr%3E%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E8%A1%8C%E3%80%82">^2</a>的注释。</p>
+<h1 id="九、图片插入"><a href="#九、图片插入" class="headerlink" title="九、图片插入"></a>九、图片插入</h1><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">！[不显示的文字](图片路径 &quot;图片标题”)</span><br></pre></td></tr></table></figure></blockquote>
+<p>效果：</p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/Shameless.webp"></p>
+<p>快捷键：Ctrl+Shift+I</p>
+<blockquote>
+<p> 练习：试着插入一个图片，要求图片缩小1&#x2F;4，左对齐。</p>
+</blockquote>
+<img src="Typora图像集/Shameless.webp" style="zoom: 25%;" align="left"/>
+
+<blockquote>
+<p>左对齐：align&#x3D;”left”，那么相应的右对齐也就是right</p>
+<p>默认是居中对齐，也就是说把align删掉就可以了</p>
+</blockquote>
+<h1 id="十、表格"><a href="#十、表格" class="headerlink" title="十、表格"></a>十、表格</h1><table>
+<thead>
+<tr>
+<th align="left">aa</th>
+<th align="center">bb</th>
+<th align="right">cc</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">第一行<br />第二行<br />第三行</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>如果要在表格或代码块之间插入文本，可以点左下角转换源代码模式，要插空是注意是插两次回车</p>
+</blockquote>
+<blockquote>
+<p>快捷键：</p>
+<p>Ctrl+T 创建表格</p>
+<p>Ctrl+Enter 下方插入行</p>
+<p>Ctrl+Shift+回车 删除该行表格</p>
+<p>Tab 可以快速跳跃单元格（横向跳跃），而Shift+Tab则是往回跳</p>
+<p>普通的回车是竖着跳到下一行，而在单元格内跳则是Shift+回车</p>
+</blockquote>
+<h1 id="十一、流程图"><a href="#十一、流程图" class="headerlink" title="十一、流程图"></a>十一、流程图</h1><p>跳过</p>
+<h1 id="十二、表情符号"><a href="#十二、表情符号" class="headerlink" title="十二、表情符号"></a>十二、表情符号</h1><p>上方工具栏—&gt;表情与符号里面直接使用比较方便（当然也有快捷键）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">：happy:、:cry:、:man:</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p>:happy:、:cry:、:man:</p>
+<h1 id="十三、数学公式"><a href="#十三、数学公式" class="headerlink" title="十三、数学公式"></a>十三、数学公式</h1><blockquote>
+<p>【【Latex公式教程】 教你用Typora解决99%的数学公式输入难题】<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1NT411C7wS?vd_source=1ca1ee3dc1972e26559c0c72abc0c86c">https://www.bilibili.com/video/BV1NT411C7wS?vd_source=1ca1ee3dc1972e26559c0c72abc0c86c</a></p>
+</blockquote>
+<h4 id="1、公式的插入"><a href="#1、公式的插入" class="headerlink" title="1、公式的插入"></a>1、公式的插入</h4><h5 id="①行中公式"><a href="#①行中公式" class="headerlink" title="①行中公式"></a>①行中公式</h5><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$公式$</span><br></pre></td></tr></table></figure></blockquote>
+<blockquote>
+<p>效果：</p>
+<p>$公式$</p>
+</blockquote>
+<h5 id="②独立公式"><a href="#②独立公式" class="headerlink" title="②独立公式"></a>②独立公式</h5><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">公式</span><br><span class="line">$$</span><br></pre></td></tr></table></figure></blockquote>
+<blockquote>
+<p>效果：<br>$$<br>公式<br>$$</p>
+</blockquote>
+<h4 id="2、上下标-1"><a href="#2、上下标-1" class="headerlink" title="2、上下标"></a>2、上下标</h4><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$x^&#123;y^z&#125;=(1+e^x)^&#123;-2xy^w&#125;$</span><br><span class="line">$\sideset&#123;^1_2&#125;&#123;^3_4&#125;&#123;\underset&#123;6&#125;\bigotimes&#125;$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p>$x^{y^z}&#x3D;(1+e^x)^{-2xy^w}$</p>
+<p>$\sideset{^1_2}{^3_4}{\underset{6}\bigotimes}$</p>
+</blockquote>
+<p>此处插入一个例题：</p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F1.png"></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F2.png"></p>
+<h4 id="3、括号和分隔符"><a href="#3、括号和分隔符" class="headerlink" title="3、括号和分隔符"></a>3、括号和分隔符</h4><p>后面会给一个表格</p>
+<p><a href="####12%E3%80%81%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6">特殊字符</a></p>
+<blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+</blockquote>
+<h4 id="4、分数"><a href="#4、分数" class="headerlink" title="4、分数"></a>4、分数</h4><blockquote>
+<p>代码：</p>
+<p>$\frac{1}{2*\frac{1}{2}}$</p>
+<p>$\frac{1}{2*\dfrac{1}{2}}$</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\frac&#123;a&#125;&#123;b&#125;\quad\dfrac&#123;a&#125;&#123;b&#125;\quad&#123;a\over b&#125;$</span><br></pre></td></tr></table></figure>
+
+<p>效果：$\frac{a}{b}\quad\dfrac{a}{b}\quad{a\over b}$</p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F3.png"></p>
+</blockquote>
+<h4 id="5、开方"><a href="#5、开方" class="headerlink" title="5、开方"></a>5、开方</h4><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\sqrt[根指数，省略时为2]&#123;被开方数&#125;$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p>$\sqrt[2]{8}$</p>
+<p>$\sqrt[3]{8}$</p>
+</blockquote>
+<h4 id="6、省略号"><a href="#6、省略号" class="headerlink" title="6、省略号"></a>6、省略号</h4><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\cdots\quad\ldots\quad\vdots\quad\ddots$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p>$\cdots\quad\ldots\quad\vdots\quad\ddots$</p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F4.png"></p>
+</blockquote>
+<h4 id="7、矢量和均值"><a href="#7、矢量和均值" class="headerlink" title="7、矢量和均值"></a>7、矢量和均值</h4><p>后面会给一个表格</p>
+<blockquote>
+<p>代码：</p>
+<p>$\overrightarrow{aaaa}$</p>
+<p>$\overline{heyiwei}$</p>
+<p>$\bar{heyiwei}$</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F5.png"></p>
+</blockquote>
+<h4 id="8、积分"><a href="#8、积分" class="headerlink" title="8、积分"></a>8、积分</h4><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\iint\limits_D\left\(dfrac&#123;\partial Q&#125;&#123;\partical x&#125;-\dfrac&#123;\partial P&#125;&#123;\partial y&#125;\right)&#123;\rm d&#125;x&#123;\rmd&#125;y=\oint\limits_LP&#123;\rm d&#125;x+Q&#123;\rm d&#125;y</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：<br>$$<br>\iint\limits_D\left(\dfrac{\partial Q}{\partial x}-\dfrac{\partial P}{\partial y}\right){\rm d}x{\rm d}y&#x3D;\oint\limits_LP{\rm d}x+Q{\rm d}y<br>$$</p>
+</blockquote>
+<h4 id="9、极限"><a href="#9、极限" class="headerlink" title="9、极限"></a>9、极限</h4><blockquote>
+<p>代码：</p>
+<p>$cos$</p>
+<p>$\cos$</p>
+<p>一些关键字前面输入\会由斜体变为正体</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\lim\limits_&#123;n\to\infin&#125;（1+\dfrac&#123;1&#125;&#123;n&#125;）^n=e$</span><br></pre></td></tr></table></figure>
+
+<p>效果：</p>
+<p>$\lim\limits_{n\to\infin}（1+\dfrac{1}{n}）^n&#x3D;e$</p>
+</blockquote>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F6.png"></p>
+<h4 id="10、累加、累乘及交集、并集"><a href="#10、累加、累乘及交集、并集" class="headerlink" title="10、累加、累乘及交集、并集"></a>10、累加、累乘及交集、并集</h4><p>后面会给一个表</p>
+<p><a href="####12%E3%80%81%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6">特殊字符</a></p>
+<blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></blockquote>
+<h4 id="11、希腊字母"><a href="#11、希腊字母" class="headerlink" title="11、希腊字母"></a>11、希腊字母</h4><blockquote>
+<p><u>注意：以下是图片，需要采用一些截图软件进行识别图文才能CV</u></p>
+</blockquote>
+<img src="Typora图像集/数学公式8.png"  />
+
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F7.png"></p>
+<h4 id="12、特殊字符"><a href="#12、特殊字符" class="headerlink" title="12、特殊字符"></a>12、特殊字符</h4><p><strong>①说明</strong></p>
+<blockquote>
+<p>可以在字符前使用\large或\small以显示更大或更小的字符。${\LARGE A}{\Large A}{\large A}{\small A}$</p>
+</blockquote>
+<p><strong>②关系运算符</strong></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F9.png"></p>
+<p><strong>③集合运算符</strong></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F10.png"></p>
+<p><strong>④三角运算符</strong></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F11.png"></p>
+<p><strong>⑤微积分运算符</strong></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F12.png"></p>
+<p><strong>⑥逻辑运算符</strong></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F13.png"></p>
+<p><strong>⑦带帽符号</strong></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F14.png"></p>
+<p><strong>⑧选取符号</strong></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F15.png"></p>
+<p><strong>⑨箭头符号</strong></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F16%E3%80%81.png"></p>
+<p><strong>⑩空格</strong></p>
+<p>$a!b$</p>
+<p>$a,b$</p>
+<p>$a;b$  (加分号和普通space点嗯一下效果相同)</p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F17.png"></p>
+<h4 id="13、字体"><a href="#13、字体" class="headerlink" title="13、字体"></a>13、字体</h4><blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$&#123;\字体&#123;需要转换的字符&#125;&#125;$</span><br></pre></td></tr></table></figure></blockquote>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F18.png"></p>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F19.png"></p>
+<h4 id="14、大括号和行标"><a href="#14、大括号和行标" class="headerlink" title="14、大括号和行标"></a>14、大括号和行标</h4><blockquote>
+<p>说明：使用\left和\right来创建自动匹配高度的<code>()</code>、<code>[]</code>、<code>.</code>。在每个公式末尾使用<code>\tag{行标}</code>来实现行标。</p>
+</blockquote>
+<blockquote>
+<p>代码：<br>$$<br>\left[\dfrac12\right)^2<br>$$</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">f\left(</span><br><span class="line">\left[</span><br><span class="line">\dfrac&#123;1+\&#123;x,y\&#125;&#125;&#123;\left(\dfrac&#123;x&#125;&#123;y&#125;\right)(u+1)&#125;+a</span><br><span class="line">\right]</span><br><span class="line">^&#123;\dfrac&#123;3&#125;&#123;2&#125;&#125;</span><br><span class="line">\right)</span><br><span class="line">\tag&#123;行标&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：<br>$$<br>f\left(<br>\left[<br>\dfrac{1+{x,y}}{\left(\dfrac{x}{y}\right)(u+1)}+a<br>\right]<br>^{\dfrac{3}{2}}<br>\right)<br>\tag{行标}<br>$$</p>
+</blockquote>
+<blockquote>
+<p>说明：如果你想将行内显示的分隔符变大，也可以使用\middle命令</p>
+</blockquote>
+<blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\left\langle q\middle\|\dfrac&#123;\dfrac&#123;x&#125;&#123;y&#125;&#125;&#123;\dfrac&#123;u&#125;&#123;v&#125;&#125;\middle|p\right\rangle</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+<p>效果：双竖线：$|$<br>$$<br>\left\langle q\middle|\dfrac{\dfrac{x}{y}}{\dfrac{u}{v}}\middle|p\right\rangle<br>$$</p>
+</blockquote>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F20.png"></p>
+<h4 id="15、其他命令"><a href="#15、其他命令" class="headerlink" title="15、其他命令"></a>15、其他命令</h4><p><strong>①注释文字</strong></p>
+<blockquote>
+<p>代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\text&#123;文字&#125;$</span><br></pre></td></tr></table></figure>
+
+<p>效果：<br>$$<br>f(n)&#x3D;\begin{cases}n&#x2F;2,&amp;\text{if $n$ is even}\3n+1,&amp;\text{if $n$ is odd}\end{cases}<br>$$</p>
+</blockquote>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F21.png"></p>
+<p><strong>③文字颜色</strong></p>
+<blockquote>
+<ul>
+<li>适用新旧浏览器<br>  代码：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\color&#123;颜色&#125;&#123;文字&#125;$</span><br></pre></td></tr></table></figure></blockquote>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F22.png"></p>
+<blockquote>
+<ul>
+<li><p>适用新版浏览器<br>  代码：</p>
+</li>
+<li><pre><code>  $\color{#rgb}{文字}$    (注意：其中r、g、b可以输入0~9和a~f来分别表示红色、绿色和蓝色的纯度)
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">![](Typora图像集/数学公式23.png)</span><br><span class="line"></span><br><span class="line">**③删除线**</span><br><span class="line">img</span><br><span class="line">用的不多，有需要可以自己查查</span><br><span class="line"></span><br><span class="line">![](Typora图像集/数学公式24.png)</span><br><span class="line"></span><br><span class="line">![](Typora图像集/数学公式25.png)</span><br><span class="line"></span><br><span class="line">#### 16、矩阵</span><br><span class="line"></span><br><span class="line">**①无框矩阵**</span><br><span class="line"></span><br><span class="line">代码：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+$$
+\begin{matrix}
+1&amp;x&amp;x^2\\
+1&amp;y&amp;y^2\\
+1&amp;z&amp;z^2\\
+\end{matrix}
+$$
+</code></pre>
+</li>
+</ul>
+<pre><code>
+</code></pre>
+</blockquote>
+<blockquote>
+<p>效果：<br>$$<br>\begin{matrix}<br>1&amp;x&amp;x^2\<br>1&amp;y&amp;y^2\<br>1&amp;z&amp;z^2\<br>\end{matrix}<br>$$</p>
+</blockquote>
+<p><strong>②边框矩阵</strong></p>
+<blockquote>
+<p> 说明：在开头将matrix替换为pmatrix、bmatrix、Bmatrix、vmatrix、Vmatrix</p>
+</blockquote>
+<p><img src="/Typora%E5%9B%BE%E5%83%8F%E9%9B%86/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F26.png"></p>
+<p><strong>③带分割线的矩阵</strong></p>
+<h1 id="十四、支持的HTML元素"><a href="#十四、支持的HTML元素" class="headerlink" title="十四、支持的HTML元素"></a>十四、支持的HTML元素</h1><h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>如何把所有图像弄到一个文件内，并且在Typora里的路径也自动修改?</p>
+<p>上方工具栏—&gt;格式(O)—&gt;图像—&gt;复制所有图像到…</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">刘谌</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2025/12/13/Typora%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">http://example.com/2025/12/13/Typora%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/touxiang.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related  no-desc" href="/2025/12/13/%E5%85%B3%E4%BA%8E%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/" title="关于用Hexo搭建个人静态网站"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">关于用Hexo搭建个人静态网站</div></div></div></a><a class="pagination-related" href="/2025/12/11/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">Hello World</div></div><div class="info-2"><div class="info-item-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote sites1$ hexo deploy  More info: Deployment </div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">刘谌</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Things do happen, so we have to anticipate that they might.</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="toc-number">1.</span> <span class="toc-text">前情提要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%A0%87%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">一、标题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%AE%B5%E8%90%BD"><span class="toc-number">3.</span> <span class="toc-text">二、段落</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E6%8D%A2%E8%A1%8C"><span class="toc-number">3.1.</span> <span class="toc-text">1、换行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">3.2.</span> <span class="toc-text">2、分割线</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%96%87%E5%AD%97%E6%98%BE%E7%A4%BA"><span class="toc-number">4.</span> <span class="toc-text">三、文字显示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E5%AD%97%E4%BD%93"><span class="toc-number">4.1.</span> <span class="toc-text">1、字体</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%88%E6%9E%9C%EF%BC%9A"><span class="toc-number">4.1.1.</span> <span class="toc-text">效果：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9B%B8%E5%85%B3%E4%BB%8E%E4%B8%8A%E6%96%B9%E5%B7%A5%E5%85%B7%E6%A0%8F%E7%9A%84%E6%A0%BC%E5%BC%8F-o-%E4%B8%AD%E4%BA%86%E8%A7%A3"><span class="toc-number">4.1.2.</span> <span class="toc-text">快捷键相关从上方工具栏的格式(o)中了解</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%83%E4%B9%A0"><span class="toc-number">4.1.3.</span> <span class="toc-text">练习</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%B8%8A%E4%B8%8B%E6%A0%87"><span class="toc-number">4.2.</span> <span class="toc-text">2、上下标</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%88%97%E8%A1%A8"><span class="toc-number">5.</span> <span class="toc-text">四、列表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">5.1.</span> <span class="toc-text">1、无序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">5.2.</span> <span class="toc-text">2、有序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8"><span class="toc-number">5.3.</span> <span class="toc-text">3、任务列表</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%8C%BA%E5%9D%97%E6%98%BE%E7%A4%BA"><span class="toc-number">6.</span> <span class="toc-text">五、区块显示</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E4%BB%A3%E7%A0%81%E6%98%BE%E7%A4%BA"><span class="toc-number">7.</span> <span class="toc-text">六、代码显示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81"><span class="toc-number">7.1.</span> <span class="toc-text">1、行内代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">7.2.</span> <span class="toc-text">2、代码块</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E9%93%BE%E6%8E%A5"><span class="toc-number">8.</span> <span class="toc-text">七、链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E8%84%9A%E6%B3%A8"><span class="toc-number">9.</span> <span class="toc-text">八、脚注</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B9%9D%E3%80%81%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5"><span class="toc-number">10.</span> <span class="toc-text">九、图片插入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%81%E3%80%81%E8%A1%A8%E6%A0%BC"><span class="toc-number">11.</span> <span class="toc-text">十、表格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-number">12.</span> <span class="toc-text">十一、流程图</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%81%E4%BA%8C%E3%80%81%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7"><span class="toc-number">13.</span> <span class="toc-text">十二、表情符号</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%81%E4%B8%89%E3%80%81%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">14.</span> <span class="toc-text">十三、数学公式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E5%85%AC%E5%BC%8F%E7%9A%84%E6%8F%92%E5%85%A5"><span class="toc-number">14.1.</span> <span class="toc-text">1、公式的插入</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A0%E8%A1%8C%E4%B8%AD%E5%85%AC%E5%BC%8F"><span class="toc-number">14.1.1.</span> <span class="toc-text">①行中公式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%91%A1%E7%8B%AC%E7%AB%8B%E5%85%AC%E5%BC%8F"><span class="toc-number">14.1.2.</span> <span class="toc-text">②独立公式</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%B8%8A%E4%B8%8B%E6%A0%87-1"><span class="toc-number">14.2.</span> <span class="toc-text">2、上下标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E6%8B%AC%E5%8F%B7%E5%92%8C%E5%88%86%E9%9A%94%E7%AC%A6"><span class="toc-number">14.3.</span> <span class="toc-text">3、括号和分隔符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E5%88%86%E6%95%B0"><span class="toc-number">14.4.</span> <span class="toc-text">4、分数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5%E3%80%81%E5%BC%80%E6%96%B9"><span class="toc-number">14.5.</span> <span class="toc-text">5、开方</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6%E3%80%81%E7%9C%81%E7%95%A5%E5%8F%B7"><span class="toc-number">14.6.</span> <span class="toc-text">6、省略号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7%E3%80%81%E7%9F%A2%E9%87%8F%E5%92%8C%E5%9D%87%E5%80%BC"><span class="toc-number">14.7.</span> <span class="toc-text">7、矢量和均值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8%E3%80%81%E7%A7%AF%E5%88%86"><span class="toc-number">14.8.</span> <span class="toc-text">8、积分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9%E3%80%81%E6%9E%81%E9%99%90"><span class="toc-number">14.9.</span> <span class="toc-text">9、极限</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10%E3%80%81%E7%B4%AF%E5%8A%A0%E3%80%81%E7%B4%AF%E4%B9%98%E5%8F%8A%E4%BA%A4%E9%9B%86%E3%80%81%E5%B9%B6%E9%9B%86"><span class="toc-number">14.10.</span> <span class="toc-text">10、累加、累乘及交集、并集</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11%E3%80%81%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D"><span class="toc-number">14.11.</span> <span class="toc-text">11、希腊字母</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12%E3%80%81%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6"><span class="toc-number">14.12.</span> <span class="toc-text">12、特殊字符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13%E3%80%81%E5%AD%97%E4%BD%93"><span class="toc-number">14.13.</span> <span class="toc-text">13、字体</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14%E3%80%81%E5%A4%A7%E6%8B%AC%E5%8F%B7%E5%92%8C%E8%A1%8C%E6%A0%87"><span class="toc-number">14.14.</span> <span class="toc-text">14、大括号和行标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4"><span class="toc-number">14.15.</span> <span class="toc-text">15、其他命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8D%81%E5%9B%9B%E3%80%81%E6%94%AF%E6%8C%81%E7%9A%84HTML%E5%85%83%E7%B4%A0"><span class="toc-number">15.</span> <span class="toc-text">十四、支持的HTML元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A1%A5%E5%85%85"><span class="toc-number">16.</span> <span class="toc-text">补充</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/12/14/test-post-%E5%B9%B2%E5%87%80%E6%96%87%E7%AB%A0/" title="test-post-干净文章">test-post-干净文章</a><time datetime="2025-12-14T04:20:35.000Z" title="Created 2025-12-14 12:20:35">2025-12-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/12/13/%E5%85%B3%E4%BA%8E%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/" title="关于用Hexo搭建个人静态网站">关于用Hexo搭建个人静态网站</a><time datetime="2025-12-13T14:52:12.000Z" title="Created 2025-12-13 22:52:12">2025-12-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/12/13/Typora%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="Typora的使用教程">Typora的使用教程</a><time datetime="2025-12-13T05:47:35.000Z" title="Created 2025-12-13 13:47:35">2025-12-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/12/11/hello-world/" title="Hello World">Hello World</a><time datetime="2025-12-11T04:32:14.016Z" title="Created 2025-12-11 12:32:14">2025-12-11</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By 刘谌</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
